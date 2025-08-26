@@ -1,0 +1,8 @@
+﻿{
+
+    "packageName": "Cloudmersive.APIClient.NETCore.DocumentAI",
+    "packageVersion": "1.0.1",
+    "netCoreProjectFile": "true",
+    "packageGuid": "a235fa3f-f1ba-40dc-8df2-23d9c98829b3",
+    "targetFramework": "v5.0"
+}
