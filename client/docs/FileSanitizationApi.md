@@ -1,18 +1,18 @@
 # Cloudmersive.APIClient.NETCore.CDR.Api.FileSanitizationApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *https://api.cloudmersive.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CallFile**](FileSanitizationApi.md#callfile) | **POST** /cdr/sanitization/file | Complete Content Disarm and Reconstruction on an Input File, and output in same file format
-[**FileToPdf**](FileSanitizationApi.md#filetopdf) | **POST** /cdr/sanitization/file/to/pdf | Complete Content Disarm and Reconstruction on an Input File with PDF/A Output
+[**CallFile**](FileSanitizationApi.md#callfile) | **POST** /cdr/sanitization/file | Content Disarm and Reconstruction on a File
+[**FileToPdf**](FileSanitizationApi.md#filetopdf) | **POST** /cdr/sanitization/file/to/pdf | Content Disarm and Reconstruction on a File with PDFA Output
 
 
 <a name="callfile"></a>
 # **CallFile**
-> void CallFile (System.IO.Stream inputFile = null)
+> byte[] CallFile (System.IO.Stream inputFile = null)
 
-Complete Content Disarm and Reconstruction on an Input File, and output in same file format
+Content Disarm and Reconstruction on a File
 
 Processes the input file via CDR to produce a secured output file.  Input content is parsed, disarmed, and then reconstructed into a new output file with the same file format as the input.
 
@@ -40,8 +40,9 @@ namespace Example
 
             try
             {
-                // Complete Content Disarm and Reconstruction on an Input File, and output in same file format
-                apiInstance.CallFile(inputFile);
+                // Content Disarm and Reconstruction on a File
+                byte[] result = apiInstance.CallFile(inputFile);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -60,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**byte[]**
 
 ### Authorization
 
@@ -69,15 +70,15 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/octet-stream
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="filetopdf"></a>
 # **FileToPdf**
-> void FileToPdf (System.IO.Stream inputFile = null)
+> byte[] FileToPdf (System.IO.Stream inputFile = null)
 
-Complete Content Disarm and Reconstruction on an Input File with PDF/A Output
+Content Disarm and Reconstruction on a File with PDFA Output
 
 Processes the input file via CDR to produce a secured PDF/A output file.  Input content is parsed, disarmed, and then reconstructed into a new PDF/A output file.
 
@@ -105,8 +106,9 @@ namespace Example
 
             try
             {
-                // Complete Content Disarm and Reconstruction on an Input File with PDF/A Output
-                apiInstance.FileToPdf(inputFile);
+                // Content Disarm and Reconstruction on a File with PDFA Output
+                byte[] result = apiInstance.FileToPdf(inputFile);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -125,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**byte[]**
 
 ### Authorization
 
@@ -134,7 +136,7 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: application/octet-stream
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
