@@ -14,8 +14,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
     <RootNamespace>Cloudmersive.APIClient.NETCore.CDR</RootNamespace>
-    <Version>2.1.0</Version>
-  <PackageIconUrl>https://cloudmersive.com/images/cmsdk_core.png</PackageIconUrl><PackageLicenseExpression>Apache-2.0</PackageLicenseExpression><PackageProjectUrl>https://cloudmersive.com/document-ai-api</PackageProjectUrl></PropertyGroup>
+    <Version>2.1.1</Version>
+  <PackageIconUrl>https://cloudmersive.com/images/cmsdk_core.png</PackageIconUrl><PackageLicenseExpression>Apache-2.0</PackageLicenseExpression><PackageProjectUrl>https://cloudmersive.com/content-disarm-and-reconstruction-cdr-api</PackageProjectUrl></PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="FubarCoder.RestSharp.Portable.Core" Version="4.0.7" />

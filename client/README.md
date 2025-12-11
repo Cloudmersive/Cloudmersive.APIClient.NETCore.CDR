@@ -2,10 +2,10 @@
 
 Use the Content Disarm and Reconstruction API to remove security risks from documents by tearing them down, removing unsafe content and rebuilding them.
 
-This C# SDK is for the [Cloudmersive Content Disarm and Reconstruction API](https://www.cloudmersive.com/cdr-api):
+This C# SDK is for the [Cloudmersive Content Disarm and Reconstruction API](https://cloudmersive.com/content-disarm-and-reconstruction-cdr-api):
 
 - API version: v1
-- SDK version: 2.1.0
+- SDK version: 2.1.1
 - Build package: io.swagger.codegen.languages.CSharpClientCodegen
 
 <a name="frameworks-supported"></a>

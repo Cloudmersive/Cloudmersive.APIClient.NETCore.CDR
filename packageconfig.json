@@ -1,7 +1,7 @@
 ﻿{
 
     "packageName": "Cloudmersive.APIClient.NETCore.CDR",
-    "packageVersion": "2.1.0",
+    "packageVersion": "2.1.1",
     "netCoreProjectFile": "true",
     "packageGuid": "116b85bc-c955-4950-b1c5-b303d73b14ce",
     "targetFramework": "v5.0"
