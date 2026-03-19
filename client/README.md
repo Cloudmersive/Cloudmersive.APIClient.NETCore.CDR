@@ -5,7 +5,7 @@ Use the Content Disarm and Reconstruction API to remove security risks from docu
 This C# SDK is for the [Cloudmersive Content Disarm and Reconstruction API](https://cloudmersive.com/content-disarm-and-reconstruction-cdr-api):
 
 - API version: v1
-- SDK version: 2.1.1
+- SDK version: 2.1.2
 - Build package: io.swagger.codegen.languages.CSharpClientCodegen
 
 <a name="frameworks-supported"></a>
@@ -80,7 +80,9 @@ All URIs are relative to *https://api.cloudmersive.com*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *FileSanitizationApi* | [**CallFile**](docs/FileSanitizationApi.md#callfile) | **POST** /cdr/sanitization/file | Content Disarm and Reconstruction on a File
+*FileSanitizationApi* | [**FileAdvanced**](docs/FileSanitizationApi.md#fileadvanced) | **POST** /cdr/sanitization/file/advanced | Advanced Content Disarm and Reconstruction on a File
 *FileSanitizationApi* | [**FileToPdf**](docs/FileSanitizationApi.md#filetopdf) | **POST** /cdr/sanitization/file/to/pdf | Content Disarm and Reconstruction on a File with PDFA Output
+*FileSanitizationApi* | [**FileToPdfAdvanced**](docs/FileSanitizationApi.md#filetopdfadvanced) | **POST** /cdr/sanitization/file/to/pdf/advanced | Advanced Content Disarm and Reconstruction on a File with PDFA Output
 
 
 <a name="documentation-for-models"></a>

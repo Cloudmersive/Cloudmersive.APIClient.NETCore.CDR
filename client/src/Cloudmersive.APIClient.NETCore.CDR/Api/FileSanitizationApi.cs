@@ -46,6 +46,51 @@ namespace Cloudmersive.APIClient.NETCore.CDR.Api
         /// <returns>ApiResponse of byte[]</returns>
         ApiResponse<byte[]> CallFileWithHttpInfo (System.IO.Stream inputFile = null);
         /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File
+        /// </summary>
+        /// <remarks>
+        /// Processes the input file via CDR to produce a secured output file with advanced scan options and response headers containing scan metadata.
+        /// </remarks>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>byte[]</returns>
+        byte[] FileAdvanced (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null);
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File
+        /// </summary>
+        /// <remarks>
+        /// Processes the input file via CDR to produce a secured output file with advanced scan options and response headers containing scan metadata.
+        /// </remarks>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>ApiResponse of byte[]</returns>
+        ApiResponse<byte[]> FileAdvancedWithHttpInfo (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null);
+        /// <summary>
         /// Content Disarm and Reconstruction on a File with PDFA Output
         /// </summary>
         /// <remarks>
@@ -66,6 +111,51 @@ namespace Cloudmersive.APIClient.NETCore.CDR.Api
         /// <param name="inputFile">Input document, or photos of a document, to extract data from (optional)</param>
         /// <returns>ApiResponse of byte[]</returns>
         ApiResponse<byte[]> FileToPdfWithHttpInfo (System.IO.Stream inputFile = null);
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File with PDFA Output
+        /// </summary>
+        /// <remarks>
+        /// Processes the input file via CDR to produce a secured PDF/A output file with advanced scan options and response headers containing scan metadata.
+        /// </remarks>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>byte[]</returns>
+        byte[] FileToPdfAdvanced (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null);
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File with PDFA Output
+        /// </summary>
+        /// <remarks>
+        /// Processes the input file via CDR to produce a secured PDF/A output file with advanced scan options and response headers containing scan metadata.
+        /// </remarks>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>ApiResponse of byte[]</returns>
+        ApiResponse<byte[]> FileToPdfAdvancedWithHttpInfo (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -90,6 +180,51 @@ namespace Cloudmersive.APIClient.NETCore.CDR.Api
         /// <returns>Task of ApiResponse (byte[])</returns>
         System.Threading.Tasks.Task<ApiResponse<byte[]>> CallFileAsyncWithHttpInfo (System.IO.Stream inputFile = null);
         /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File
+        /// </summary>
+        /// <remarks>
+        /// Processes the input file via CDR to produce a secured output file with advanced scan options and response headers containing scan metadata.
+        /// </remarks>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>Task of byte[]</returns>
+        System.Threading.Tasks.Task<byte[]> FileAdvancedAsync (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null);
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File
+        /// </summary>
+        /// <remarks>
+        /// Processes the input file via CDR to produce a secured output file with advanced scan options and response headers containing scan metadata.
+        /// </remarks>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        System.Threading.Tasks.Task<ApiResponse<byte[]>> FileAdvancedAsyncWithHttpInfo (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null);
+        /// <summary>
         /// Content Disarm and Reconstruction on a File with PDFA Output
         /// </summary>
         /// <remarks>
@@ -110,6 +245,51 @@ namespace Cloudmersive.APIClient.NETCore.CDR.Api
         /// <param name="inputFile">Input document, or photos of a document, to extract data from (optional)</param>
         /// <returns>Task of ApiResponse (byte[])</returns>
         System.Threading.Tasks.Task<ApiResponse<byte[]>> FileToPdfAsyncWithHttpInfo (System.IO.Stream inputFile = null);
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File with PDFA Output
+        /// </summary>
+        /// <remarks>
+        /// Processes the input file via CDR to produce a secured PDF/A output file with advanced scan options and response headers containing scan metadata.
+        /// </remarks>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>Task of byte[]</returns>
+        System.Threading.Tasks.Task<byte[]> FileToPdfAdvancedAsync (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null);
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File with PDFA Output
+        /// </summary>
+        /// <remarks>
+        /// Processes the input file via CDR to produce a secured PDF/A output file with advanced scan options and response headers containing scan metadata.
+        /// </remarks>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        System.Threading.Tasks.Task<ApiResponse<byte[]>> FileToPdfAdvancedAsyncWithHttpInfo (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null);
         #endregion Asynchronous Operations
     }
 
@@ -350,6 +530,217 @@ namespace Cloudmersive.APIClient.NETCore.CDR.Api
         }
 
         /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File Processes the input file via CDR to produce a secured output file with advanced scan options and response headers containing scan metadata.
+        /// </summary>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>byte[]</returns>
+        public byte[] FileAdvanced (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null)
+        {
+             ApiResponse<byte[]> localVarResponse = FileAdvancedWithHttpInfo(allowExecutables, allowInvalidFiles, allowScripts, allowPasswordProtectedFiles, allowMacros, allowXmlExternalEntities, allowInsecureDeserialization, allowHtml, allowUnsafeArchives, allowOleEmbeddedObject, allowUnwantedAction, restrictFileTypes, inputFile);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File Processes the input file via CDR to produce a secured output file with advanced scan options and response headers containing scan metadata.
+        /// </summary>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>ApiResponse of byte[]</returns>
+        public ApiResponse< byte[] > FileAdvancedWithHttpInfo (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null)
+        {
+
+            var localVarPath = "./cdr/sanitization/file/advanced";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/octet-stream"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (allowExecutables != null) localVarHeaderParams.Add("allowExecutables", this.Configuration.ApiClient.ParameterToString(allowExecutables)); // header parameter
+            if (allowInvalidFiles != null) localVarHeaderParams.Add("allowInvalidFiles", this.Configuration.ApiClient.ParameterToString(allowInvalidFiles)); // header parameter
+            if (allowScripts != null) localVarHeaderParams.Add("allowScripts", this.Configuration.ApiClient.ParameterToString(allowScripts)); // header parameter
+            if (allowPasswordProtectedFiles != null) localVarHeaderParams.Add("allowPasswordProtectedFiles", this.Configuration.ApiClient.ParameterToString(allowPasswordProtectedFiles)); // header parameter
+            if (allowMacros != null) localVarHeaderParams.Add("allowMacros", this.Configuration.ApiClient.ParameterToString(allowMacros)); // header parameter
+            if (allowXmlExternalEntities != null) localVarHeaderParams.Add("allowXmlExternalEntities", this.Configuration.ApiClient.ParameterToString(allowXmlExternalEntities)); // header parameter
+            if (allowInsecureDeserialization != null) localVarHeaderParams.Add("allowInsecureDeserialization", this.Configuration.ApiClient.ParameterToString(allowInsecureDeserialization)); // header parameter
+            if (allowHtml != null) localVarHeaderParams.Add("allowHtml", this.Configuration.ApiClient.ParameterToString(allowHtml)); // header parameter
+            if (allowUnsafeArchives != null) localVarHeaderParams.Add("allowUnsafeArchives", this.Configuration.ApiClient.ParameterToString(allowUnsafeArchives)); // header parameter
+            if (allowOleEmbeddedObject != null) localVarHeaderParams.Add("allowOleEmbeddedObject", this.Configuration.ApiClient.ParameterToString(allowOleEmbeddedObject)); // header parameter
+            if (allowUnwantedAction != null) localVarHeaderParams.Add("allowUnwantedAction", this.Configuration.ApiClient.ParameterToString(allowUnwantedAction)); // header parameter
+            if (restrictFileTypes != null) localVarHeaderParams.Add("restrictFileTypes", this.Configuration.ApiClient.ParameterToString(restrictFileTypes)); // header parameter
+            if (inputFile != null) localVarFileParams.Add("InputFile", this.Configuration.ApiClient.ParameterToFile("InputFile", inputFile));
+
+            // authentication (Apikey) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Apikey")))
+            {
+                localVarHeaderParams["Apikey"] = this.Configuration.GetApiKeyWithPrefix("Apikey");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("FileAdvanced", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<byte[]>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
+        }
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File Processes the input file via CDR to produce a secured output file with advanced scan options and response headers containing scan metadata.
+        /// </summary>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>Task of byte[]</returns>
+        public async System.Threading.Tasks.Task<byte[]> FileAdvancedAsync (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null)
+        {
+             ApiResponse<byte[]> localVarResponse = await FileAdvancedAsyncWithHttpInfo(allowExecutables, allowInvalidFiles, allowScripts, allowPasswordProtectedFiles, allowMacros, allowXmlExternalEntities, allowInsecureDeserialization, allowHtml, allowUnsafeArchives, allowOleEmbeddedObject, allowUnwantedAction, restrictFileTypes, inputFile);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File Processes the input file via CDR to produce a secured output file with advanced scan options and response headers containing scan metadata.
+        /// </summary>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<byte[]>> FileAdvancedAsyncWithHttpInfo (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null)
+        {
+
+            var localVarPath = "./cdr/sanitization/file/advanced";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/octet-stream"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (allowExecutables != null) localVarHeaderParams.Add("allowExecutables", this.Configuration.ApiClient.ParameterToString(allowExecutables)); // header parameter
+            if (allowInvalidFiles != null) localVarHeaderParams.Add("allowInvalidFiles", this.Configuration.ApiClient.ParameterToString(allowInvalidFiles)); // header parameter
+            if (allowScripts != null) localVarHeaderParams.Add("allowScripts", this.Configuration.ApiClient.ParameterToString(allowScripts)); // header parameter
+            if (allowPasswordProtectedFiles != null) localVarHeaderParams.Add("allowPasswordProtectedFiles", this.Configuration.ApiClient.ParameterToString(allowPasswordProtectedFiles)); // header parameter
+            if (allowMacros != null) localVarHeaderParams.Add("allowMacros", this.Configuration.ApiClient.ParameterToString(allowMacros)); // header parameter
+            if (allowXmlExternalEntities != null) localVarHeaderParams.Add("allowXmlExternalEntities", this.Configuration.ApiClient.ParameterToString(allowXmlExternalEntities)); // header parameter
+            if (allowInsecureDeserialization != null) localVarHeaderParams.Add("allowInsecureDeserialization", this.Configuration.ApiClient.ParameterToString(allowInsecureDeserialization)); // header parameter
+            if (allowHtml != null) localVarHeaderParams.Add("allowHtml", this.Configuration.ApiClient.ParameterToString(allowHtml)); // header parameter
+            if (allowUnsafeArchives != null) localVarHeaderParams.Add("allowUnsafeArchives", this.Configuration.ApiClient.ParameterToString(allowUnsafeArchives)); // header parameter
+            if (allowOleEmbeddedObject != null) localVarHeaderParams.Add("allowOleEmbeddedObject", this.Configuration.ApiClient.ParameterToString(allowOleEmbeddedObject)); // header parameter
+            if (allowUnwantedAction != null) localVarHeaderParams.Add("allowUnwantedAction", this.Configuration.ApiClient.ParameterToString(allowUnwantedAction)); // header parameter
+            if (restrictFileTypes != null) localVarHeaderParams.Add("restrictFileTypes", this.Configuration.ApiClient.ParameterToString(restrictFileTypes)); // header parameter
+            if (inputFile != null) localVarFileParams.Add("InputFile", this.Configuration.ApiClient.ParameterToFile("InputFile", inputFile));
+
+            // authentication (Apikey) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Apikey")))
+            {
+                localVarHeaderParams["Apikey"] = this.Configuration.GetApiKeyWithPrefix("Apikey");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("FileAdvanced", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<byte[]>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
+        }
+
+        /// <summary>
         /// Content Disarm and Reconstruction on a File with PDFA Output Processes the input file via CDR to produce a secured PDF/A output file.  Input content is parsed, disarmed, and then reconstructed into a new PDF/A output file.
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
@@ -480,6 +871,217 @@ namespace Cloudmersive.APIClient.NETCore.CDR.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("FileToPdf", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<byte[]>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
+        }
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File with PDFA Output Processes the input file via CDR to produce a secured PDF/A output file with advanced scan options and response headers containing scan metadata.
+        /// </summary>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>byte[]</returns>
+        public byte[] FileToPdfAdvanced (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null)
+        {
+             ApiResponse<byte[]> localVarResponse = FileToPdfAdvancedWithHttpInfo(allowExecutables, allowInvalidFiles, allowScripts, allowPasswordProtectedFiles, allowMacros, allowXmlExternalEntities, allowInsecureDeserialization, allowHtml, allowUnsafeArchives, allowOleEmbeddedObject, allowUnwantedAction, restrictFileTypes, inputFile);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File with PDFA Output Processes the input file via CDR to produce a secured PDF/A output file with advanced scan options and response headers containing scan metadata.
+        /// </summary>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>ApiResponse of byte[]</returns>
+        public ApiResponse< byte[] > FileToPdfAdvancedWithHttpInfo (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null)
+        {
+
+            var localVarPath = "./cdr/sanitization/file/to/pdf/advanced";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/octet-stream"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (allowExecutables != null) localVarHeaderParams.Add("allowExecutables", this.Configuration.ApiClient.ParameterToString(allowExecutables)); // header parameter
+            if (allowInvalidFiles != null) localVarHeaderParams.Add("allowInvalidFiles", this.Configuration.ApiClient.ParameterToString(allowInvalidFiles)); // header parameter
+            if (allowScripts != null) localVarHeaderParams.Add("allowScripts", this.Configuration.ApiClient.ParameterToString(allowScripts)); // header parameter
+            if (allowPasswordProtectedFiles != null) localVarHeaderParams.Add("allowPasswordProtectedFiles", this.Configuration.ApiClient.ParameterToString(allowPasswordProtectedFiles)); // header parameter
+            if (allowMacros != null) localVarHeaderParams.Add("allowMacros", this.Configuration.ApiClient.ParameterToString(allowMacros)); // header parameter
+            if (allowXmlExternalEntities != null) localVarHeaderParams.Add("allowXmlExternalEntities", this.Configuration.ApiClient.ParameterToString(allowXmlExternalEntities)); // header parameter
+            if (allowInsecureDeserialization != null) localVarHeaderParams.Add("allowInsecureDeserialization", this.Configuration.ApiClient.ParameterToString(allowInsecureDeserialization)); // header parameter
+            if (allowHtml != null) localVarHeaderParams.Add("allowHtml", this.Configuration.ApiClient.ParameterToString(allowHtml)); // header parameter
+            if (allowUnsafeArchives != null) localVarHeaderParams.Add("allowUnsafeArchives", this.Configuration.ApiClient.ParameterToString(allowUnsafeArchives)); // header parameter
+            if (allowOleEmbeddedObject != null) localVarHeaderParams.Add("allowOleEmbeddedObject", this.Configuration.ApiClient.ParameterToString(allowOleEmbeddedObject)); // header parameter
+            if (allowUnwantedAction != null) localVarHeaderParams.Add("allowUnwantedAction", this.Configuration.ApiClient.ParameterToString(allowUnwantedAction)); // header parameter
+            if (restrictFileTypes != null) localVarHeaderParams.Add("restrictFileTypes", this.Configuration.ApiClient.ParameterToString(restrictFileTypes)); // header parameter
+            if (inputFile != null) localVarFileParams.Add("InputFile", this.Configuration.ApiClient.ParameterToFile("InputFile", inputFile));
+
+            // authentication (Apikey) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Apikey")))
+            {
+                localVarHeaderParams["Apikey"] = this.Configuration.GetApiKeyWithPrefix("Apikey");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("FileToPdfAdvanced", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<byte[]>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
+        }
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File with PDFA Output Processes the input file via CDR to produce a secured PDF/A output file with advanced scan options and response headers containing scan metadata.
+        /// </summary>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>Task of byte[]</returns>
+        public async System.Threading.Tasks.Task<byte[]> FileToPdfAdvancedAsync (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null)
+        {
+             ApiResponse<byte[]> localVarResponse = await FileToPdfAdvancedAsyncWithHttpInfo(allowExecutables, allowInvalidFiles, allowScripts, allowPasswordProtectedFiles, allowMacros, allowXmlExternalEntities, allowInsecureDeserialization, allowHtml, allowUnsafeArchives, allowOleEmbeddedObject, allowUnwantedAction, restrictFileTypes, inputFile);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Advanced Content Disarm and Reconstruction on a File with PDFA Output Processes the input file via CDR to produce a secured PDF/A output file with advanced scan options and response headers containing scan metadata.
+        /// </summary>
+        /// <exception cref="Cloudmersive.APIClient.NETCore.CDR.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="allowExecutables">Set to false to block executable files (EXE, DLL, etc.) (optional)</param>
+        /// <param name="allowInvalidFiles">Set to false to block files that are not valid for their detected type (optional)</param>
+        /// <param name="allowScripts">Set to false to block script files. PDF and Office macro sanitization still runs regardless. (optional)</param>
+        /// <param name="allowPasswordProtectedFiles">Set to false to block password-protected files (optional)</param>
+        /// <param name="allowMacros">Set to false to block files containing macros. Office macro removal still runs regardless. (optional)</param>
+        /// <param name="allowXmlExternalEntities">Set to false to block XML files with external entity references (XXE) (optional)</param>
+        /// <param name="allowInsecureDeserialization">Set to false to block files with insecure deserialization patterns (optional)</param>
+        /// <param name="allowHtml">Set to false to block HTML files (optional)</param>
+        /// <param name="allowUnsafeArchives">Set to false to block archive files flagged as unsafe (e.g., zip bombs) (optional)</param>
+        /// <param name="allowOleEmbeddedObject">Set to false to block files with embedded OLE objects (optional)</param>
+        /// <param name="allowUnwantedAction">Set to false to block files with unwanted actions (optional)</param>
+        /// <param name="restrictFileTypes">Comma-separated list of allowed file extensions (e.g., \&quot;.pdf,.docx,.xlsx\&quot;). Files not matching will be blocked. (optional)</param>
+        /// <param name="inputFile">Input document to CDR process (optional)</param>
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<byte[]>> FileToPdfAdvancedAsyncWithHttpInfo (bool? allowExecutables = null, bool? allowInvalidFiles = null, bool? allowScripts = null, bool? allowPasswordProtectedFiles = null, bool? allowMacros = null, bool? allowXmlExternalEntities = null, bool? allowInsecureDeserialization = null, bool? allowHtml = null, bool? allowUnsafeArchives = null, bool? allowOleEmbeddedObject = null, bool? allowUnwantedAction = null, string restrictFileTypes = null, System.IO.Stream inputFile = null)
+        {
+
+            var localVarPath = "./cdr/sanitization/file/to/pdf/advanced";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/octet-stream"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (allowExecutables != null) localVarHeaderParams.Add("allowExecutables", this.Configuration.ApiClient.ParameterToString(allowExecutables)); // header parameter
+            if (allowInvalidFiles != null) localVarHeaderParams.Add("allowInvalidFiles", this.Configuration.ApiClient.ParameterToString(allowInvalidFiles)); // header parameter
+            if (allowScripts != null) localVarHeaderParams.Add("allowScripts", this.Configuration.ApiClient.ParameterToString(allowScripts)); // header parameter
+            if (allowPasswordProtectedFiles != null) localVarHeaderParams.Add("allowPasswordProtectedFiles", this.Configuration.ApiClient.ParameterToString(allowPasswordProtectedFiles)); // header parameter
+            if (allowMacros != null) localVarHeaderParams.Add("allowMacros", this.Configuration.ApiClient.ParameterToString(allowMacros)); // header parameter
+            if (allowXmlExternalEntities != null) localVarHeaderParams.Add("allowXmlExternalEntities", this.Configuration.ApiClient.ParameterToString(allowXmlExternalEntities)); // header parameter
+            if (allowInsecureDeserialization != null) localVarHeaderParams.Add("allowInsecureDeserialization", this.Configuration.ApiClient.ParameterToString(allowInsecureDeserialization)); // header parameter
+            if (allowHtml != null) localVarHeaderParams.Add("allowHtml", this.Configuration.ApiClient.ParameterToString(allowHtml)); // header parameter
+            if (allowUnsafeArchives != null) localVarHeaderParams.Add("allowUnsafeArchives", this.Configuration.ApiClient.ParameterToString(allowUnsafeArchives)); // header parameter
+            if (allowOleEmbeddedObject != null) localVarHeaderParams.Add("allowOleEmbeddedObject", this.Configuration.ApiClient.ParameterToString(allowOleEmbeddedObject)); // header parameter
+            if (allowUnwantedAction != null) localVarHeaderParams.Add("allowUnwantedAction", this.Configuration.ApiClient.ParameterToString(allowUnwantedAction)); // header parameter
+            if (restrictFileTypes != null) localVarHeaderParams.Add("restrictFileTypes", this.Configuration.ApiClient.ParameterToString(restrictFileTypes)); // header parameter
+            if (inputFile != null) localVarFileParams.Add("InputFile", this.Configuration.ApiClient.ParameterToFile("InputFile", inputFile));
+
+            // authentication (Apikey) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Apikey")))
+            {
+                localVarHeaderParams["Apikey"] = this.Configuration.GetApiKeyWithPrefix("Apikey");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("FileToPdfAdvanced", localVarResponse);
                 if (exception != null) throw exception;
             }
 
